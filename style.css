@@ -1,0 +1,50 @@
+*{
+    padding: 0 px;
+    margin: 0 px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    height: 50em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+    
+    
+}
+main img {
+    position: absolute;
+    height: 100em;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+}
+section h1{
+    position: relative;
+    color: darkslategrey;
+    margin: 20px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 70px;
+}
+section p{
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+}
+section button{
+    padding: 7px;
+    position: relative;
+    color: darkslategrey;
+    border: solid 2px gray;
+    border-radius: 2rem;
+    background: inherit;
+}
