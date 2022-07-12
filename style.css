@@ -1,50 +1,106 @@
-*{
-    padding: 0 px;
-    margin: 0 px;
+* {
+  padding: 0 px;
+  margin: 0 px;
 }
-body{
-    margin: 0px;
-    padding: 0px;
+body {
+    margin: auto;
 }
-main{
-    height: 50em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: baseline;
-    
-    
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
 }
-main img {
-    position: absolute;
-    height: 100em;
-}
-section {
+nav {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+.menu {
+    position: relative;;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.24);
+    border: black;
+    border-radius: 20%;
+}
+
+header img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+div .barra1, .barra2, .barra3 {
+    position: relative;
+    width: 35px;
+    height: 5px;
+    margin: 7px 6px;
+    background-color: #c7c7c7;
+    border: solid 1px rgba(0, 0, 0, 0);
+    /* background: inherit; */
+    transition: 0.4s;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* Rotate first bar */
+  .change .barra1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-10px, 9px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .barra2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .barra3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -6px) ;
+    transform: rotate(45deg) translate(-10px, -10px) ;
+  }
+.presentation {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
-    align-items: baseline;
+    align-items:  center;
+    color: black;
 }
-section h1{
-    position: relative;
-    color: darkslategrey;
-    margin: 20px 0px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 70px;
+.presentation h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 5rem;
+  font-weight: 400;
+  margin: 0px;
+  color: rgba(255, 255, 255, 0.747);
 }
-section p{
-    position: relative;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 25px;
-}
-section button{
-    padding: 7px;
-    position: relative;
-    color: darkslategrey;
-    border: solid 2px gray;
-    border-radius: 2rem;
-    background: inherit;
+ .presentation p {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 300;
+  font-size: 25px;
+  color: rgba(245, 245, 245, 0.582);
+ }
+ button:hover {
+  color: whitesmoke;
+  border: solid 1px whitesmoke;
+ }
+
+section button {
+  display: flex;
+  align-self: center;
+  padding: 15px;
+  position: relative;
+  color: rgba(245, 245, 245, 0.514);
+  border: solid 1px gray;
+  border-radius: 5px;
+  background: inherit;
+  font-weight: 700;
+  cursor: pointer;
 }
